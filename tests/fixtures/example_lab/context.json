@@ -1,0 +1,1 @@
+{"lab_server_url":"http://localhost:8000/","event_server_url":"http://localhost:8001/","experiment_server_url":"http://localhost:8002/","data_server_url":"http://localhost:8004/","resource_server_url":"http://localhost:8003/","workcell_server_url":"http://localhost:8005/","location_server_url":"http://localhost:8006/"}

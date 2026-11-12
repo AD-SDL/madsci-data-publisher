@@ -1,0 +1,28 @@
+[project]
+name = "madsci-data-publisher"
+version = "0.1.0"
+description = "Read-only client that publishes a MADSci lab's live state and site description to a data store for agents."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "UChicago Argonne, LLC" }]
+# The core talks to MADSci over plain HTTP with the standard library and does not
+# import MADSci. Parquet output, which the MCP layer's data store reads, needs pandas.
+dependencies = []
+
+[project.optional-dependencies]
+parquet = ["pandas>=2.0", "pyarrow>=14"]
+dev = ["pytest>=8", "pandas>=2.0", "pyarrow>=14"]
+
+[project.scripts]
+madsci-data-publisher = "madsci_data_publisher.__main__:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

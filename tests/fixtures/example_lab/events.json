@@ -1,0 +1,1744 @@
+{
+ "01M78Z8DYGRX1CZETWYPGBFZGC": {
+  "_id": "01M78Z8DYGRX1CZETWYPGBFZGC",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:05.648466",
+  "source": {
+   "manager_id": "01M3NQTH7874HR629R26T08QAS"
+  },
+  "event_data": {
+   "message": "Experiment started",
+   "event_type": "experiment_start",
+   "experiment_id": "01M78Z8DYDS9XSPW0NZA6HHG19",
+   "run_name": "Plate read run 1"
+  },
+  "trace_id": "f0cc463ee043f5227f3d4bc3e61ab01e",
+  "span_id": "07962e2ccaa85697",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8E073DNX41XNPH1B557Q": {
+  "_id": "01M78Z8E073DNX41XNPH1B557Q",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:05.703927",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Workflow start successful",
+   "event_type": "workflow_start",
+   "workflow_name": "Minimal Test Workflow",
+   "workflow_id": "01M78Z8DZBPQ23ZR5XDAJA4RGQ",
+   "workflow_definition_id": "01M78Z8DYKC723FK8WKSE7ZWZM"
+  },
+  "trace_id": "6e97344134b179d90435ae5981aab599",
+  "span_id": "02bd915fbc7b7f9f",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8ECQRH1B19M9WP4JP649": {
+  "_id": "01M78Z8ECQRH1B19M9WP4JP649",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:06.103905",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Running workflow step",
+   "event_type": "workflow_step_start",
+   "workflow_id": "01M78Z8DZBPQ23ZR5XDAJA4RGQ",
+   "step_id": "01M78Z8E04MDAJ93BX2GHS8HXQ",
+   "step_action": "wait",
+   "step_node": null,
+   "step_index": 0
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8FC99ZFEKPXRJA9E6YFT": {
+  "_id": "01M78Z8FC99ZFEKPXRJA9E6YFT",
+  "event_type": "workflow_complete",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:07.113710",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "workflow_id": "01M78Z8DZBPQ23ZR5XDAJA4RGQ",
+   "name": "Minimal Test Workflow",
+   "status": "completed",
+   "author": "MADSci Test",
+   "duration_seconds": 1.028186,
+   "start_time": "2026-11-12T22:50:06.082322",
+   "end_time": "2026-11-12T22:50:07.110508",
+   "step_count": 1,
+   "current_step_index": 0,
+   "step_statistics": {
+    "completed_steps": 1,
+    "failed_steps": 0,
+    "skipped_steps": 0,
+    "total_steps": 1
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8FCGDFZ2RHVPHPDYKDEC": {
+  "_id": "01M78Z8FCGDFZ2RHVPHPDYKDEC",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:07.120206",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Completed workflow step",
+   "event_type": "workflow_step_complete",
+   "workflow_id": "01M78Z8DZBPQ23ZR5XDAJA4RGQ",
+   "step_id": "01M78Z8E04MDAJ93BX2GHS8HXQ",
+   "step_action": "wait",
+   "step_node": null,
+   "step_index": 0,
+   "step_status": "ActionStatus.SUCCEEDED"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8G47X8JBJA7YFHH1BBN2": {
+  "_id": "01M78Z8G47X8JBJA7YFHH1BBN2",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:07.879740",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Error starting workflow",
+   "event_type": "workflow_start",
+   "workflow_definition_id": "01M78Z8G2XTMV4NZFM1ZJ9K8PQ",
+   "error": "Location location_1 not found in Workcell 'Example Workcell'",
+   "exc_info": true
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8GF2PA0XPR0VN6NQZAQB": {
+  "_id": "01M78Z8GF2PA0XPR0VN6NQZAQB",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:08.226883",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Error starting workflow",
+   "event_type": "workflow_start",
+   "workflow_definition_id": "01M78Z8G2XTMV4NZFM1ZJ9K8PQ",
+   "error": "Location location_1 not found in Workcell 'Example Workcell'",
+   "exc_info": true
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8H3CS58CH2TF35X1CTPV": {
+  "_id": "01M78Z8H3CS58CH2TF35X1CTPV",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:08.876435",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Error starting workflow",
+   "event_type": "workflow_start",
+   "workflow_definition_id": "01M78Z8G2XTMV4NZFM1ZJ9K8PQ",
+   "error": "Location location_1 not found in Workcell 'Example Workcell'",
+   "exc_info": true
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8JADD6H21QTBXX5B62Z2": {
+  "_id": "01M78Z8JADD6H21QTBXX5B62Z2",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:10.125116",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Error starting workflow",
+   "event_type": "workflow_start",
+   "workflow_definition_id": "01M78Z8G2XTMV4NZFM1ZJ9K8PQ",
+   "error": "Location location_1 not found in Workcell 'Example Workcell'",
+   "exc_info": true
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78Z8JAFWG8CNJPNDNRH9HGW": {
+  "_id": "01M78Z8JAFWG8CNJPNDNRH9HGW",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:50:10.127339",
+  "source": {},
+  "event_data": {
+   "message": "Error submitting workflow",
+   "component_type": "WorkcellClient",
+   "workcell_server": "http://localhost:8005/",
+   "event_type": "log_error",
+   "response_content": "{\"detail\":\"Error starting workflow: Location location_1 not found in Workcell 'Example Workcell'\"}"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB2GC4D8CDV5APHKNKYF8": {
+  "_id": "01M78ZB2GC4D8CDV5APHKNKYF8",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:32.236488",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Error while committing session",
+   "event_type": "manager_error",
+   "exc_info": true
+  },
+  "trace_id": "85660eb551c776fe1144b5c6702957b2",
+  "span_id": "98a81722bddb6e0d",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB2GEJWGT1QDDAQP12V6A": {
+  "_id": "01M78ZB2GEJWGT1QDDAQP12V6A",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:32.238130",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to pop resource",
+   "event_type": "resource_update",
+   "resource_id": "01M3NQTJYM7VZDHH21VJTJGA6D",
+   "error": "Container 'liquidhandler_1.deck_1' is empty.",
+   "exc_info": true
+  },
+  "trace_id": "85660eb551c776fe1144b5c6702957b2",
+  "span_id": "98a81722bddb6e0d",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB2T6SS3J3MKPRWNFHAX7": {
+  "_id": "01M78ZB2T6SS3J3MKPRWNFHAX7",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:32.550920",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Error while committing session",
+   "event_type": "manager_error",
+   "exc_info": true
+  },
+  "trace_id": "8ee5672ebee8ab85cbc10e029c3ccbe1",
+  "span_id": "70d23bb2a044743b",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB2T8A37Y463TGGSHBW5Y": {
+  "_id": "01M78ZB2T8A37Y463TGGSHBW5Y",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:32.552905",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to pop resource",
+   "event_type": "resource_update",
+   "resource_id": "01M3NQTJYM7VZDHH21VJTJGA6D",
+   "error": "Container 'liquidhandler_1.deck_1' is empty.",
+   "exc_info": true
+  },
+  "trace_id": "8ee5672ebee8ab85cbc10e029c3ccbe1",
+  "span_id": "70d23bb2a044743b",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB3DJCT8DMFR33VHMN9FV": {
+  "_id": "01M78ZB3DJCT8DMFR33VHMN9FV",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:33.170951",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Error while committing session",
+   "event_type": "manager_error",
+   "exc_info": true
+  },
+  "trace_id": "6415cf8c4cbbe40a2065c5ea5c4971a3",
+  "span_id": "d4271e6f5bd58236",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB3DPXN85NH05WZ7CXRMP": {
+  "_id": "01M78ZB3DPXN85NH05WZ7CXRMP",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:33.174329",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to pop resource",
+   "event_type": "resource_update",
+   "resource_id": "01M3NQTJYM7VZDHH21VJTJGA6D",
+   "error": "Container 'liquidhandler_1.deck_1' is empty.",
+   "exc_info": true
+  },
+  "trace_id": "6415cf8c4cbbe40a2065c5ea5c4971a3",
+  "span_id": "d4271e6f5bd58236",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB4KFY3YZNNDD5QSC9DB7": {
+  "_id": "01M78ZB4KFY3YZNNDD5QSC9DB7",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:34.383394",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Error while committing session",
+   "event_type": "manager_error",
+   "exc_info": true
+  },
+  "trace_id": "8a6cc1341d5c7a861b78c0adf916187b",
+  "span_id": "b2dfd8dbe09d157d",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB4KJ0NR5VHZ9KKCDV0HW": {
+  "_id": "01M78ZB4KJ0NR5VHZ9KKCDV0HW",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:34.386693",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to pop resource",
+   "event_type": "resource_update",
+   "resource_id": "01M3NQTJYM7VZDHH21VJTJGA6D",
+   "error": "Container 'liquidhandler_1.deck_1' is empty.",
+   "exc_info": true
+  },
+  "trace_id": "8a6cc1341d5c7a861b78c0adf916187b",
+  "span_id": "b2dfd8dbe09d157d",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB4YFRQF9AFZMFXER2WFS": {
+  "_id": "01M78ZB4YFRQF9AFZMFXER2WFS",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:34.735810",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Workflow start successful",
+   "event_type": "workflow_start",
+   "workflow_name": "Plate Read Workflow",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "workflow_definition_id": "01M78ZB2G4SY4C77QWY50PSAZE"
+  },
+  "trace_id": "5fc7719e9194a10420c63a339b3c208d",
+  "span_id": "e1d492a04ca0762b",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB7ST0WPHERKEV06HJAPF": {
+  "_id": "01M78ZB7ST0WPHERKEV06HJAPF",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:37.658266",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Running workflow step",
+   "event_type": "workflow_step_start",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QR",
+   "step_action": "run_protocol",
+   "step_node": "liquidhandler_1",
+   "step_index": 0
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB7SZGGEJFXZQ3244WYCS": {
+  "_id": "01M78ZB7SZGGEJFXZQ3244WYCS",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:37.663120",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Acquired node lock for action",
+   "event_type": "action_start",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QR",
+   "node_name": "liquidhandler_1",
+   "action_id": "01M78ZB7SXKX00MA3GG7N01FBE",
+   "action_name": "run_protocol"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB7T3ZTX9M77XHE3D25ZD": {
+  "_id": "01M78ZB7T3ZTX9M77XHE3D25ZD",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:37.667275",
+  "source": {
+   "node_id": "01M3NQTHERBKAMPR3SVSCKRRH3"
+  },
+  "event_data": {
+   "message": "Action status changed",
+   "component_name": "node.liquidhandler_1",
+   "component_type": "LiquidHandlerNode",
+   "event_type": "action_status_change",
+   "action_result": {
+    "action_id": "01M78ZB7T02A2XW8S3Q63WK76W",
+    "status": "not_started",
+    "errors": [],
+    "json_result": null,
+    "files": null,
+    "datapoints": null,
+    "history_created_at": "2026-11-12T22:51:37.666765Z"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB7T4CDS6BRP9NB6ZK5JG": {
+  "_id": "01M78ZB7T4CDS6BRP9NB6ZK5JG",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:37.668035",
+  "source": {
+   "node_id": "01M3NQTHERBKAMPR3SVSCKRRH3"
+  },
+  "event_data": {
+   "message": "Action status changed",
+   "component_name": "node.liquidhandler_1",
+   "component_type": "LiquidHandlerNode",
+   "event_type": "action_status_change",
+   "action_result": {
+    "action_id": "01M78ZB7T02A2XW8S3Q63WK76W",
+    "status": "running",
+    "errors": [],
+    "json_result": null,
+    "files": null,
+    "datapoints": null,
+    "history_created_at": "2026-11-12T22:51:37.667592Z"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZB9TRMHTCDQ7HTBEC10ZE": {
+  "_id": "01M78ZB9TRMHTCDQ7HTBEC10ZE",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:39.736198",
+  "source": {
+   "node_id": "01M3NQTHERBKAMPR3SVSCKRRH3"
+  },
+  "event_data": {
+   "message": "Action status changed",
+   "component_name": "node.liquidhandler_1",
+   "component_type": "LiquidHandlerNode",
+   "event_type": "action_status_change",
+   "action_result": {
+    "action_id": "01M78ZB7T02A2XW8S3Q63WK76W",
+    "status": "succeeded",
+    "errors": [],
+    "json_result": {
+     "protocol_name": "tmp65bg_b0u.py"
+    },
+    "files": null,
+    "datapoints": null,
+    "history_created_at": "2026-11-12T22:51:39.734969Z"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBASMY97YQT999T7EF1P8": {
+  "_id": "01M78ZBASMY97YQT999T7EF1P8",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:40.724957",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Completed workflow step",
+   "event_type": "workflow_step_complete",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QR",
+   "step_action": "run_protocol",
+   "step_node": "liquidhandler_1",
+   "step_index": 0,
+   "step_status": "ActionStatus.SUCCEEDED"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDFBHPFRZ4H5AR5G7CND": {
+  "_id": "01M78ZBDFBHPFRZ4H5AR5G7CND",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.467269",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to get resource",
+   "event_type": "data_query",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9",
+   "error": "404: Resource not found",
+   "exc_info": true
+  },
+  "trace_id": "5968835bb487cc93fa300e4875ba40b7",
+  "span_id": "1b8783bf31e43154",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDG7ZDHGXMSC8YY7S1T9": {
+  "_id": "01M78ZBDG7ZDHGXMSC8YY7S1T9",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.495548",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Running workflow step",
+   "event_type": "workflow_step_start",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QS",
+   "step_action": "transfer",
+   "step_node": "robotarm_1",
+   "step_index": 1
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDGCSPCS47CFA2FZ5EA2": {
+  "_id": "01M78ZBDGCSPCS47CFA2FZ5EA2",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.500751",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Acquired node lock for action",
+   "event_type": "action_start",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QS",
+   "node_name": "robotarm_1",
+   "action_id": "01M78ZBDGBXSVPD54WYD34V435",
+   "action_name": "transfer"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDGFASG51Y3YQYET3RAH": {
+  "_id": "01M78ZBDGFASG51Y3YQYET3RAH",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.503839",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Action status changed",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "action_status_change",
+   "action_result": {
+    "action_id": "01M78ZBDGEFKP2RQ74WW1FV2H2",
+    "status": "not_started",
+    "errors": [],
+    "json_result": null,
+    "files": null,
+    "datapoints": null,
+    "history_created_at": "2026-11-12T22:51:43.503341Z"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDGGFS8DB05S71C2081R": {
+  "_id": "01M78ZBDGGFS8DB05S71C2081R",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.504700",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Action status changed",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "action_status_change",
+   "action_result": {
+    "action_id": "01M78ZBDGEFKP2RQ74WW1FV2H2",
+    "status": "running",
+    "errors": [],
+    "json_result": null,
+    "files": null,
+    "datapoints": null,
+    "history_created_at": "2026-11-12T22:51:43.504486Z"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDH3WQ2AS5NCNN7RZA8T": {
+  "_id": "01M78ZBDH3WQ2AS5NCNN7RZA8T",
+  "event_type": "log_warning",
+  "log_level": 30,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.523020",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Local-only mode does not currently search through child resources to get children.",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "log_warning",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBDH3WQ2AS5NCNN7RZA8V": {
+  "_id": "01M78ZBDH3WQ2AS5NCNN7RZA8V",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:43.523547",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Node exception",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "node_error",
+   "error": {
+    "message": "'NoneType' object has no attribute 'children'",
+    "logged_at": "2026-11-12T22:51:43.523315",
+    "error_type": "AttributeError"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBE11ZFZP9AZGNNJW0T17": {
+  "_id": "01M78ZBE11ZFZP9AZGNNJW0T17",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:44.033240",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Workflow step failed, see error in step result",
+   "event_type": "workflow_step_failed",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QS",
+   "step_action": "transfer",
+   "step_node": "robotarm_1"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBE13NVBEND3C5X4FRS4W": {
+  "_id": "01M78ZBE13NVBEND3C5X4FRS4W",
+  "event_type": "workflow_complete",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:44.035574",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "name": "Plate Read Workflow",
+   "status": "failed",
+   "author": null,
+   "duration_seconds": 6.406227,
+   "start_time": "2026-11-12T22:51:37.626406",
+   "end_time": "2026-11-12T22:51:44.032633",
+   "step_count": 4,
+   "current_step_index": 1,
+   "step_statistics": {
+    "completed_steps": 1,
+    "failed_steps": 1,
+    "skipped_steps": 0,
+    "total_steps": 4
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBE18BJBJ4AQJNN7P7QKN": {
+  "_id": "01M78ZBE18BJBJ4AQJNN7P7QKN",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:44.040516",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Completed workflow step",
+   "event_type": "workflow_step_complete",
+   "workflow_id": "01M78ZB4M41VVMPCYNC5PQNFWF",
+   "step_id": "01M78ZB4QB5MS7T0VGATB6P2QS",
+   "step_action": "transfer",
+   "step_node": "robotarm_1",
+   "step_index": 1,
+   "step_status": "ActionStatus.FAILED"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBEYYDSD91H9E2EDYZMDK": {
+  "_id": "01M78ZBEYYDSD91H9E2EDYZMDK",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:44.990683",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Workflow start successful",
+   "event_type": "workflow_start",
+   "workflow_name": "Plate Read Workflow",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "workflow_definition_id": "01M78ZB2G4SY4C77QWY50PSAZE"
+  },
+  "trace_id": "cf174e62470e43848383a99cd526510f",
+  "span_id": "7ad337a6fdc39b09",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBJH6EK35BHRE89RSMFH9": {
+  "_id": "01M78ZBJH6EK35BHRE89RSMFH9",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:48.646366",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Running workflow step",
+   "event_type": "workflow_step_start",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGM",
+   "step_action": "run_protocol",
+   "step_node": "liquidhandler_1",
+   "step_index": 0
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBJHAXJTFSEYTD6MXF5VK": {
+  "_id": "01M78ZBJHAXJTFSEYTD6MXF5VK",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:48.650662",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Acquired node lock for action",
+   "event_type": "action_start",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGM",
+   "node_name": "liquidhandler_1",
+   "action_id": "01M78ZBJH907Z3MAN5F7C8XQEQ",
+   "action_name": "run_protocol"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBNGTGM3M4YFQY5RR9DHS": {
+  "_id": "01M78ZBNGTGM3M4YFQY5RR9DHS",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:51.706362",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Completed workflow step",
+   "event_type": "workflow_step_complete",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGM",
+   "step_action": "run_protocol",
+   "step_node": "liquidhandler_1",
+   "step_index": 0,
+   "step_status": "ActionStatus.SUCCEEDED"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBQX28RWEH9FEFS6TDX2K": {
+  "_id": "01M78ZBQX28RWEH9FEFS6TDX2K",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:54.146782",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to get resource",
+   "event_type": "data_query",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9",
+   "error": "404: Resource not found",
+   "exc_info": true
+  },
+  "trace_id": "c173a89c8c4c48924dfb937576072494",
+  "span_id": "6aa684b7a9c35f13",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZBWXWX8DHBYNAVGN45ME3": {
+  "_id": "01M78ZBWXWX8DHBYNAVGN45ME3",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:51:59.292486",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to get resource",
+   "event_type": "data_query",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9",
+   "error": "404: Resource not found",
+   "exc_info": true
+  },
+  "trace_id": "797c43335c7a84ea3c7c407dd3df122b",
+  "span_id": "9b8f1cd0ed068623",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZC27CG0SH0E143QSJKKS3": {
+  "_id": "01M78ZC27CG0SH0E143QSJKKS3",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:52:04.716694",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to get resource",
+   "event_type": "data_query",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9",
+   "error": "404: Resource not found",
+   "exc_info": true
+  },
+  "trace_id": "55e388c614d632bb0141d61223b70238",
+  "span_id": "00692fb7dc4db440",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M78ZC7RH1BVPQP1184VSGBKK": {
+  "_id": "01M78ZC7RH1BVPQP1184VSGBKK",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T22:52:10.385987",
+  "source": {
+   "manager_id": "01M3NQTH3F8FXAH3J588N1V4RW"
+  },
+  "event_data": {
+   "message": "Failed to get resource",
+   "event_type": "data_query",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9",
+   "error": "404: Resource not found",
+   "exc_info": true
+  },
+  "trace_id": "c39ac276d75d0d3e29d1d4a2621dcde8",
+  "span_id": "f544105fff403b65",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79083N7ZCE0TGAZ4RHVW6KG": {
+  "_id": "01M79083N7ZCE0TGAZ4RHVW6KG",
+  "event_type": "log_warning",
+  "log_level": 30,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:23.687901",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Failed to register resource template",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "log_warning",
+   "template_name": "robot_arm_gripper_slot",
+   "template_type": "resource",
+   "error": "'Slot' object has no attribute 'version'"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79083P0SKDGAJM840M55YJ7": {
+  "_id": "01M79083P0SKDGAJM840M55YJ7",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:23.712065",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Node started",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "node_start",
+   "node_info": {
+    "node_name": "robotarm_1",
+    "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF",
+    "node_description": null,
+    "node_type": "device",
+    "module_name": "robotarm",
+    "module_version": "0.0.1",
+    "capabilities": {
+     "get_info": true,
+     "get_state": true,
+     "get_status": true,
+     "send_action": true,
+     "get_action_status": true,
+     "get_action_result": true,
+     "get_action_history": true,
+     "action_files": true,
+     "send_admin_commands": true,
+     "set_config": true,
+     "get_resources": false,
+     "get_log": true,
+     "admin_commands": [
+      "get_location",
+      "lock",
+      "reset",
+      "shutdown",
+      "unlock"
+     ]
+    },
+    "node_url": "http://localhost:2002/",
+    "actions": {
+     "transfer": {
+      "name": "transfer",
+      "description": "Transfer a plate from one location to another, at the specified speed.",
+      "args": {
+       "speed": {
+        "name": "speed",
+        "description": "The speed of the transfer, in 1-100 mm/s",
+        "argument_type": "float",
+        "required": false,
+        "default": null
+       }
+      },
+      "locations": {
+       "source": {
+        "name": "source",
+        "description": "The source location",
+        "argument_type": "location",
+        "required": true,
+        "default": null
+       },
+       "target": {
+        "name": "target",
+        "description": "the target location",
+        "argument_type": "location",
+        "required": true,
+        "default": null
+       }
+      },
+      "files": {},
+      "results": {},
+      "blocking": true,
+      "asynchronous": true,
+      "accepts_var_args": false,
+      "accepts_var_kwargs": false,
+      "var_args_schema": null,
+      "var_kwargs_schema": null
+     }
+    },
+    "config": {
+     "status_update_interval": 2.0,
+     "state_update_interval": 2.0,
+     "node_name": "robotarm_1",
+     "node_id": null,
+     "node_type": null,
+     "module_name": "robotarm",
+     "module_version": null,
+     "enable_registry_resolution": true,
+     "lab_url": null,
+     "registry_lock_timeout": 60.0,
+     "node_url": "http://localhost:2002/",
+     "uvicorn_kwargs": {
+      "limit_concurrency": 10
+     },
+     "enable_rate_limiting": true,
+     "rate_limit_requests": 100,
+     "rate_limit_window": 60,
+     "rate_limit_short_requests": 50,
+     "rate_limit_short_window": 1,
+     "rate_limit_cleanup_interval": 300,
+     "device_number": 0,
+     "speed": 50.0,
+     "wait_time": 2.0
+    },
+    "config_schema": {
+     "$defs": {
+      "NodeType": {
+       "description": "The type of a MADSci node.",
+       "enum": [
+        "device",
+        "compute",
+        "resource_manager",
+        "event_manager",
+        "workcell_manager",
+        "data_manager",
+        "transfer_manager"
+       ],
+       "title": "NodeType",
+       "type": "string"
+      }
+     },
+     "description": "Configuration for the robot arm node module.",
+     "properties": {
+      "status_update_interval": {
+       "anyOf": [
+        {
+         "type": "number"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": 2.0,
+       "description": "The interval in seconds at which the node should update its status.",
+       "title": "Status Update Interval"
+      },
+      "state_update_interval": {
+       "anyOf": [
+        {
+         "type": "number"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": 2.0,
+       "description": "The interval in seconds at which the node should update its state.",
+       "title": "State Update Interval"
+      },
+      "node_name": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "description": "Name for this node. If not set, defaults to the class name.",
+       "title": "Node Name"
+      },
+      "node_id": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "description": "Unique ID for this node. If not set, a new ULID is generated.",
+       "title": "Node ID"
+      },
+      "node_type": {
+       "anyOf": [
+        {
+         "$ref": "#/$defs/NodeType"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "description": "The type of thing this node provides an interface for.",
+       "title": "Node Type"
+      },
+      "module_name": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "description": "Name of the node module implementation.",
+       "title": "Module Name"
+      },
+      "module_version": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "description": "Version of the node module implementation.",
+       "title": "Module Version"
+      },
+      "enable_registry_resolution": {
+       "default": true,
+       "description": "When true, resolve node_id from the ID Registry at startup for stable identity across restarts.",
+       "title": "Enable Registry Resolution",
+       "type": "boolean"
+      },
+      "lab_url": {
+       "anyOf": [
+        {
+         "format": "uri",
+         "minLength": 1,
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "description": "Lab Manager URL for distributed registry coordination.",
+       "title": "Lab URL"
+      },
+      "registry_lock_timeout": {
+       "default": 60.0,
+       "description": "Seconds to retry registry lock acquisition on contention at startup. Should be at least 2x the lock TTL (30s) to survive ungraceful container restarts.",
+       "title": "Registry Lock Timeout",
+       "type": "number"
+      },
+      "node_url": {
+       "default": "http://127.0.0.1:2000/",
+       "description": "The URL used to communicate with the node. This is the base URL for the REST API.",
+       "format": "uri",
+       "minLength": 1,
+       "title": "Node URL",
+       "type": "string"
+      },
+      "uvicorn_kwargs": {
+       "additionalProperties": true,
+       "description": "Configuration for the Uvicorn server that runs the REST API. By default, sets limit_concurrency=10 to protect against connection exhaustion attacks.",
+       "title": "Uvicorn Configuration",
+       "type": "object"
+      },
+      "enable_rate_limiting": {
+       "default": true,
+       "description": "Enable rate limiting middleware for the REST API.",
+       "title": "Enable Rate Limiting",
+       "type": "boolean"
+      },
+      "rate_limit_requests": {
+       "default": 100,
+       "description": "Maximum number of requests allowed per long time window (only used if enable_rate_limiting is True).",
+       "minimum": 1,
+       "title": "Rate Limit Requests",
+       "type": "integer"
+      },
+      "rate_limit_window": {
+       "default": 60,
+       "description": "Long time window in seconds for rate limiting (only used if enable_rate_limiting is True).",
+       "minimum": 1,
+       "title": "Rate Limit Window",
+       "type": "integer"
+      },
+      "rate_limit_short_requests": {
+       "anyOf": [
+        {
+         "minimum": 1,
+         "type": "integer"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": 50,
+       "description": "Maximum number of requests allowed per short time window for burst protection (only used if enable_rate_limiting is True). If None, short window limiting is disabled.",
+       "title": "Rate Limit Short Requests"
+      },
+      "rate_limit_short_window": {
+       "anyOf": [
+        {
+         "minimum": 1,
+         "type": "integer"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": 1,
+       "description": "Short time window for burst protection in seconds (only used if enable_rate_limiting is True). If None, short window limiting is disabled.",
+       "title": "Rate Limit Short Window"
+      },
+      "rate_limit_cleanup_interval": {
+       "default": 300,
+       "description": "Interval in seconds between cleanup operations to prevent memory leaks (only used if enable_rate_limiting is True).",
+       "minimum": 1,
+       "title": "Rate Limit Cleanup Interval",
+       "type": "integer"
+      },
+      "device_number": {
+       "default": 0,
+       "title": "Device Number",
+       "type": "integer"
+      },
+      "speed": {
+       "anyOf": [
+        {
+         "maximum": 100.0,
+         "minimum": 1.0,
+         "type": "number"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": 50.0,
+       "title": "Speed"
+      },
+      "wait_time": {
+       "default": 2.0,
+       "title": "Wait Time",
+       "type": "number"
+      }
+     },
+     "title": "RobotArmConfig",
+     "type": "object"
+    },
+    "intrinsic_locations": [],
+    "location_representation_templates": [
+     {
+      "template_name": "robotarm_deck_access",
+      "default_values": {
+       "gripper_config": "standard",
+       "max_payload": 2.0
+      },
+      "schema_def": {
+       "type": "object",
+       "properties": {
+        "position": {
+         "type": "array",
+         "items": {
+          "type": "number"
+         },
+         "minItems": 3,
+         "maxItems": 4,
+         "description": "Joint angles or XYZ(+rotation) for this location"
+        },
+        "gripper_config": {
+         "type": "string",
+         "enum": [
+          "standard",
+          "wide",
+          "vacuum"
+         ],
+         "description": "Gripper configuration to use at this location"
+        },
+        "max_payload": {
+         "type": "number",
+         "minimum": 0,
+         "description": "Maximum payload weight in kg"
+        },
+        "approach_height": {
+         "type": "number",
+         "description": "Height offset for approach/depart in mm"
+        }
+       },
+       "required": [
+        "position"
+       ]
+      },
+      "required_overrides": [
+       "position"
+      ],
+      "tags": [
+       "robot_arm",
+       "deck"
+      ],
+      "version": "1.1.0",
+      "description": "Robot arm deck access representation with joint positions"
+     },
+     {
+      "template_name": "robotarm_wide_access",
+      "default_values": {
+       "gripper_config": "wide",
+       "max_payload": 10.0
+      },
+      "schema_def": {
+       "type": "object",
+       "properties": {
+        "position": {
+         "type": "array",
+         "items": {
+          "type": "number"
+         },
+         "minItems": 3,
+         "maxItems": 4,
+         "description": "Joint angles or XYZ(+rotation) for this location"
+        },
+        "gripper_config": {
+         "type": "string",
+         "enum": [
+          "standard",
+          "wide",
+          "vacuum"
+         ],
+         "description": "Gripper configuration for wide access points"
+        },
+        "max_payload": {
+         "type": "number",
+         "minimum": 0,
+         "description": "Maximum payload weight in kg"
+        },
+        "approach_height": {
+         "type": "number",
+         "description": "Height offset for approach/depart in mm"
+        }
+       },
+       "required": [
+        "position"
+       ]
+      },
+      "required_overrides": [
+       "position"
+      ],
+      "tags": [
+       "robot_arm",
+       "wide"
+      ],
+      "version": "1.1.0",
+      "description": "Robot arm wide gripper access representation with joint positions"
+     }
+    ]
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79086M9XPWNZZWDP1ABRE0Q": {
+  "_id": "01M79086M9XPWNZZWDP1ABRE0Q",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:26.729872",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Running workflow step",
+   "event_type": "workflow_step_start",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGN",
+   "step_action": "transfer",
+   "step_node": "robotarm_1",
+   "step_index": 1
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79086MD5CVYD73AGC8C2TSV": {
+  "_id": "01M79086MD5CVYD73AGC8C2TSV",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:26.733498",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Acquired node lock for action",
+   "event_type": "action_start",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGN",
+   "node_name": "robotarm_1",
+   "action_id": "01M79086MC6029FZFHP57KES46",
+   "action_name": "transfer"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79086N192P1YZWG0W977YK8": {
+  "_id": "01M79086N192P1YZWG0W977YK8",
+  "event_type": "log_warning",
+  "log_level": 30,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:26.753311",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Local-only mode does not currently search through child resources to get children.",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "log_warning",
+   "resource_id": "01M3NQTKKV19VN1YE17GTF0PX9"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79086N192P1YZWG0W977YK9": {
+  "_id": "01M79086N192P1YZWG0W977YK9",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:26.753827",
+  "source": {
+   "node_id": "01M3NQTHKHBZD94FHSEJAR1SEF"
+  },
+  "event_data": {
+   "message": "Node exception",
+   "component_name": "node.robotarm_1",
+   "component_type": "RobotArmNode",
+   "event_type": "node_error",
+   "error": {
+    "message": "'NoneType' object has no attribute 'children'",
+    "logged_at": "2026-11-12T23:07:26.753601",
+    "error_type": "AttributeError"
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M790874EPX2YQ171FM25E2YS": {
+  "_id": "01M790874EPX2YQ171FM25E2YS",
+  "event_type": "log_error",
+  "log_level": 40,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:27.246455",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Workflow step failed, see error in step result",
+   "event_type": "workflow_step_failed",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGN",
+   "step_action": "transfer",
+   "step_node": "robotarm_1"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M790874FBZRK1980YVXSW8VE": {
+  "_id": "01M790874FBZRK1980YVXSW8VE",
+  "event_type": "workflow_complete",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:27.247821",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "name": "Plate Read Workflow",
+   "status": "failed",
+   "author": null,
+   "duration_seconds": 938.627172,
+   "start_time": "2026-11-12T22:51:48.618883",
+   "end_time": "2026-11-12T23:07:27.246055",
+   "step_count": 4,
+   "current_step_index": 1,
+   "step_statistics": {
+    "completed_steps": 1,
+    "failed_steps": 1,
+    "skipped_steps": 0,
+    "total_steps": 4
+   }
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M790874KVCPPV5EBRZVJG2HP": {
+  "_id": "01M790874KVCPPV5EBRZVJG2HP",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:27.251984",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Completed workflow step",
+   "event_type": "workflow_step_complete",
+   "workflow_id": "01M78ZBEVRE79XKPH9C54WS9EZ",
+   "step_id": "01M78ZBEYQFZQWT9NXAA4A0GGN",
+   "step_action": "transfer",
+   "step_node": "robotarm_1",
+   "step_index": 1,
+   "step_status": "ActionStatus.FAILED"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ },
+ "01M790876M4HC29FT9S73AN630": {
+  "_id": "01M790876M4HC29FT9S73AN630",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:27.316093",
+  "source": {
+   "manager_id": "01M3NQTH7874HR629R26T08QAS"
+  },
+  "event_data": {
+   "message": "Experiment completed",
+   "event_type": "experiment_complete",
+   "experiment_id": "01M78Z8DYDS9XSPW0NZA6HHG19",
+   "run_name": "Plate read run 1"
+  },
+  "trace_id": "6e27297e14a8ebb9ce56844a5f311472",
+  "span_id": "70d273b097b40795",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M790876S16B1W63VC1VFK2ZK": {
+  "_id": "01M790876S16B1W63VC1VFK2ZK",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:27.321602",
+  "source": {
+   "manager_id": "01M3NQTH7874HR629R26T08QAS"
+  },
+  "event_data": {
+   "message": "Experiment started",
+   "event_type": "experiment_start",
+   "experiment_id": "01M790876QRSD4931MEEJBJB28",
+   "run_name": "Transfer run 1"
+  },
+  "trace_id": "34d802f1a9130cba9d1ee8c9dbfc47ec",
+  "span_id": "9d1a0edd85744597",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M79087BJPAXGF5RNJV4ETTT7": {
+  "_id": "01M79087BJPAXGF5RNJV4ETTT7",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:27.474553",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Workflow start successful",
+   "event_type": "workflow_start",
+   "workflow_name": "Plate Read Workflow",
+   "workflow_id": "01M7908771QQHP3FAF05NVVK9M",
+   "workflow_definition_id": "01M78ZB2G4SY4C77QWY50PSAZE"
+  },
+  "trace_id": "35e30cc7b2dec9757a34242e226a62b8",
+  "span_id": "b0a6634c044138bc",
+  "archived": false,
+  "archived_at": null
+ },
+ "01M7908BRANSMZWTSJS9W8EE0Q": {
+  "_id": "01M7908BRANSMZWTSJS9W8EE0Q",
+  "event_type": "log_info",
+  "log_level": 20,
+  "alert": false,
+  "event_timestamp": "2026-11-12T23:07:31.978435",
+  "source": {
+   "workcell_id": "01M3NQTHYBEHE0VKB0CH6CJFS5",
+   "manager_id": "01M3NQTHYBEHE0VKB0CH6CJFS5"
+  },
+  "event_data": {
+   "message": "Acquired node lock for action",
+   "event_type": "action_start",
+   "workflow_id": "01M7908771QQHP3FAF05NVVK9M",
+   "step_id": "01M79087B912XZNSJ795DVVYTH",
+   "node_name": "liquidhandler_1",
+   "action_id": "01M7908BR9FE6FHMSEKVE86KTH",
+   "action_name": "run_protocol"
+  },
+  "trace_id": null,
+  "span_id": null,
+  "archived": false,
+  "archived_at": null
+ }
+}
