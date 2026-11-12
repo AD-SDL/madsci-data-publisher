@@ -10,10 +10,8 @@ from pathlib import Path
 import pytest
 
 from madsci_data_publisher.events import EventLog, normalize
-from madsci_data_publisher.mcp_tables import (
+from madsci_data_publisher.tables import (
     TABLE_COLUMNS,
-    LabSnapshot,
-    TableOptions,
     build_tables,
     experiment_status,
     node_status,
@@ -41,15 +39,15 @@ def snapshot():
     node_names = {(n.get("info") or {}).get("node_id"): name for name, n in state["nodes"].items()}
     log = EventLog()
     log.add([r for r in (normalize(k, v, node_names) for k, v in events.items()) if r])
-    return LabSnapshot(
+    return dict(
         lab_url="http://localhost:8000/", workcell_url="http://localhost:8005/",
-        lab_settings=load("lab_settings.json")["settings"], workcell_info=load("workcell.json"),
+        lab_settings=load("lab_settings.json")["settings"],
         state=state, workflows=workflows, experiments=load("experiments.json"), events=log.rows,
     )
 
 
 def test_tables_have_exactly_the_mcp_columns(snapshot):
-    tables = build_tables(snapshot)
+    tables = build_tables(**snapshot)
     assert set(tables) == set(TABLE_COLUMNS)
     for name, rows in tables.items():
         for row in rows:
@@ -57,7 +55,7 @@ def test_tables_have_exactly_the_mcp_columns(snapshot):
 
 
 def test_values_fit_the_mcp_enums(snapshot):
-    tables = build_tables(snapshot)
+    tables = build_tables(**snapshot)
     assert {n["status"] for n in tables["nodes"]} <= NODE_STATUSES
     assert {n["communication_type"] for n in tables["nodes"]} <= COMMUNICATION_TYPES
     assert {w["status"] for w in tables["workflows"]} <= WORKFLOW_STATUSES
@@ -75,7 +73,7 @@ def test_values_fit_the_mcp_enums(snapshot):
 
 
 def test_example_lab_contents(snapshot):
-    tables = build_tables(snapshot, TableOptions(location="test bench"))
+    tables = build_tables(**snapshot, location="test bench")
     assert tables["labs"][0]["name"] == "Example Lab"
     assert tables["labs"][0]["location"] == "test bench"
     assert tables["workcells"][0]["name"] == "Example Workcell"
@@ -91,7 +89,7 @@ def test_example_lab_contents(snapshot):
 
 
 def test_timestamps_are_utc_iso(snapshot):
-    tables = build_tables(snapshot)
+    tables = build_tables(**snapshot)
     for w in tables["workflows"]:
         assert w["submitted_at"].endswith("Z")
     for n in tables["nodes"]:

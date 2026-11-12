@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 from madsci_data_publisher.events import EventCursor, EventLog, effective_type, normalize, selector
-from madsci_data_publisher.ulid import ulid_floor, ulid_ms
+from madsci_data_publisher.lab import ulid_floor, ulid_ms
 
 FIXTURES = Path(__file__).parent / "fixtures" / "example_lab"
 MIN = 60_000

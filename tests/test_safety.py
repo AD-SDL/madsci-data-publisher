@@ -1,31 +1,33 @@
 """The publisher must never change the lab and never publish credentials."""
 
+import json
 import re
 from pathlib import Path
 
 import pytest
 
-from madsci_data_publisher.http import Http
-from madsci_data_publisher.redact import redact
-from madsci_data_publisher.site.collect_live import discover_nodes
+from madsci_data_publisher import site
+from madsci_data_publisher.lab import Lab
+from madsci_data_publisher.store import DataStore, redact
 
 SRC = Path(__file__).parent.parent / "src" / "madsci_data_publisher"
+FIXTURES = Path(__file__).parent / "fixtures" / "example_lab"
 
 
 def test_only_read_only_posts_are_allowed():
-    http = Http()
-    for path in ("/workflow", "/admin/reset/robotarm_1", "/event", "/events/archive", "/backup"):
+    lab = Lab({"event": "http://localhost:8001/", "workcell": "http://localhost:8005/"})
+    for manager, path in (("workcell", "/workflow"), ("workcell", "/admin/reset/robotarm_1"),
+                          ("event", "/event"), ("event", "/events/archive"), ("event", "/backup")):
         with pytest.raises(ValueError):
-            http.post_query("http://localhost:8001/", path, {})
+            lab.query(manager, path, {})
 
 
-def test_no_other_http_methods_in_source():
+def test_all_requests_go_through_lab():
     for path in SRC.rglob("*.py"):
         text = path.read_text()
         assert not re.search(r"method=\"(PUT|PATCH|DELETE)\"", text), path
-        if path.name != "http.py":
-            assert "urlopen(" not in text or path.name == "collect_live.py", path
-    assert 'method="GET"' in (SRC / "site" / "collect_live.py").read_text()
+        if path.name != "lab.py":
+            assert "urlopen(" not in text, path
 
 
 @pytest.mark.parametrize("raw", [
@@ -39,17 +41,26 @@ def test_credentials_are_removed(raw):
     assert "<redacted>" in out
 
 
-def test_credential_keys_are_removed():
-    out = redact({"event_data": {"mongo_db": "mongodb://x:y@h/", "message": "ok"}})
-    assert out["event_data"]["mongo_db"] == "<redacted>"
-    assert out["event_data"]["message"] == "ok"
+def test_store_redacts_everything_it_writes(tmp_path):
+    store = DataStore(tmp_path, fmt="json")
+    store.write_table("events", [{"message": "db at mongodb://u:topsecret@h/"}], ["message"])
+    store.write_json("status.json", {"mongo_db": "mongodb://u:topsecret@h/"})
+    for f in tmp_path.iterdir():
+        assert "topsecret" not in f.read_text()
 
 
-def test_site_collector_reads_runtime_nodes_from_workcell():
-    block = {"endpoints": {
-        "/nodes": {"status": 200, "body": {"late_node": {"node_url": "http://localhost:2010/", "info": {}}}},
-        "/workcell": {"status": 200, "body": {"nodes": {"early_node": "http://localhost:2000/"}}},
-    }}
-    nodes, source = discover_nodes(block)
-    assert set(nodes) == {"late_node"}
-    assert "/nodes" in source
+def test_site_description_from_fixtures():
+    load = lambda n: json.loads((FIXTURES / n).read_text())  # noqa: E731
+    raw = {"collected_at": "2026-11-12T23:00:00Z", "state": load("state.json"),
+           "lab_settings": load("lab_settings.json")["settings"], "locations": load("locations.json"),
+           "transfer_graph": load("transfer_graph_detailed.json"),
+           "resource_templates": load("resource_templates.json"), "versions": {"lab": "0.8.0"}}
+    s = site.summarize(raw)
+    assert len(s["nodes"]) == 6 and len(s["locations"]) == 10 and s["transfers"]
+    arm = next(n for n in s["nodes"] if n["name"] == "robotarm_1")
+    transfer = next(a for a in arm["actions"] if a["name"] == "transfer")
+    assert {p["name"] for p in transfer["locations"]} == {"source", "target"}
+    assert all(not t["source"].startswith("01") for t in s["transfers"])  # names, not IDs
+    # Poses are never published, only which nodes can reach a location.
+    assert "representations" not in json.dumps(s["locations"])
+    assert s["fingerprint"] == site.fingerprint(raw["state"])

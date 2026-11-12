@@ -15,7 +15,7 @@ parquet = ["pandas>=2.0", "pyarrow>=14"]
 dev = ["pytest>=8", "pandas>=2.0", "pyarrow>=14"]
 
 [project.scripts]
-madsci-data-publisher = "madsci_data_publisher.__main__:main"
+madsci-data-publisher = "madsci_data_publisher.publisher:main"
 
 [build-system]
 requires = ["setuptools>=68"]
