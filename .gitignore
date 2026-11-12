@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Local configuration and collected data. Snapshots hold node config, device
+# addresses and poses, so they never belong in git.
+.env
+sites.local.*
+snapshot*.json
+data/
+out/
+
+# Editors and OS
+.DS_Store
+.vscode/
+.idea/
